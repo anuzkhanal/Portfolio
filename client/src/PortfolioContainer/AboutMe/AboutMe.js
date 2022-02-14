@@ -21,7 +21,7 @@ export default function AboutMe(props) {
         "Interactive Front End as per the design",
         "React Js",
         "Redux for State Mnanagement",
-        "Building REST API",
+        "Building REST API in Python ",
         "Managing database",
       ],
       heading: "Here are a Few Highlights:",
