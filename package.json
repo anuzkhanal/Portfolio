@@ -1,15 +1,17 @@
 {
   "name": "react_portfolio",
+  "homepage": "http://anuzkhanal.github.io/react_portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONGIG_PRODUCTION=false npm install --prefix client && npm run build--prefix client"
-
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +22,8 @@
     "express": "^4.17.2",
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
